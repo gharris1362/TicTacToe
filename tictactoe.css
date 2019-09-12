@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+}
+body {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    background-color: aqua
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    font-size: 100px;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+}
+h4 {
+    display: flex;
+    justify-content: center;
+}
+.board {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15vh;
+    padding-bottom: 15vh
+}
+.cell {
+    display: flex;
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    width: 125px;
+    cursor: pointer;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+#five {
+    border: 10px solid black
+}
+#two {
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+}
+#six {
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+}
+#four {
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+}
+#eight {
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+}
+#cpu {
+    display: flex;
+    border: 3px solid black;
+    justify-content: center; 
+    width: 100px;
+    align-self: center;
+    cursor: pointer;    
+}
+.reset {
+    display: flex;
+    border: 3px solid black;
+    justify-content: center;
+    width: 100px;
+    align-self: center;
+    cursor: pointer;
+    
+}
+.buttons {
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 10px;
+}
