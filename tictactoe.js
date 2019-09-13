@@ -22,7 +22,6 @@ for (i = 0; i < cells.length; i++) {
     cells[i].addEventListener('click', clickedCell)
 };
 
-
 function clickedCell(cell) {
     if (cell.target.textContent == '') {
         cell.target.textContent = shape
@@ -61,6 +60,13 @@ function checkWin() {
     };
 };
 
+function reset() {
+    for (i = 0; i < cells.length; i++) {
+        cells[i].innerHTML = ''
+        shape = 'X'
+        cellCount = 0
+    }
+}
 
 //------------------------------------CPU--------------------------------------//
 function cpuOn() {
@@ -69,15 +75,22 @@ function cpuOn() {
     }
     else { cpu.innerHTML = 'CPU Off' };
 };
+
 function cpuActive() {
-     let cpuCell = Math.floor(Math.random() * cells.length)
-    if (cells.textContent == '') {
-        
-
-        checkWin()
-    }
-    console.log(cpuCell)
-
+    if (cellCount != 9) {
+        i = 0
+        while (i == 0) {
+            let cpuCell = cells[Math.floor(Math.random() * cells.length)]
+            if (cpuCell.textContent == '') {
+                cpuCell.innerHTML = shape
+                checkWin()
+                i = 1
+                if (shape == 'X') {
+                    shape = 'O'
+                } else {
+                    shape = 'X'
+                };
+            };
+        };
+    };
 };
-
-
