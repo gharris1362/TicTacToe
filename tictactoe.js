@@ -1,3 +1,5 @@
+
+
 //--------------------------VARIABLES-------------------------------//
 let cells = document.querySelectorAll('.cell');
 let shape = 'X';
@@ -13,10 +15,6 @@ let wins = [
     [cells[2], cells[5], cells[8]],
     [cells[0], cells[4], cells[8]],
     [cells[2], cells[4], cells[6]]];
-
-
-
-
 //------------------------------FUNCTIONS-----------------------------------------//
 for (i = 0; i < cells.length; i++) {
     cells[i].addEventListener('click', clickedCell)
